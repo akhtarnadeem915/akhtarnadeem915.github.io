@@ -1,0 +1,382 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Scribbl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="scribbling platform" />
+  <meta name="keywords" content="scribbling, blogging, writting, platform" />
+  <meta name="Scribble" content="free" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="blog.css">
+
+<!-- Required styles for MDC Web -->
+<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+
+
+<!-- Required MDC Web JavaScript library -->
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<!-- Instantiate single textfield component rendered in the document -->
+<script>
+  mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
+</script>
+
+<link rel="apple-touch-icon" sizes="180x180" href="scribbls/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="scribbls/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="scribbls/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="scribbls/favicon_io/site.webmanifest">
+
+<style type="text/css">
+   @keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+span:hover {
+    animation: bounce 1s;
+}
+
+
+.card {
+    
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  max-width: 100%;
+  border: none;
+
+}
+
+
+.card:hover {
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);
+  animation: bounce 1s;
+   
+}
+
+
+.wrapper{
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 45px;
+}
+
+.embossed{
+  color: #f0f0f0;  
+  background-color: #666666;
+  text-shadow: 1px 4px 4px #555;
+  text-align: center;
+  -webkit-background-clip: text;
+    -moz-background-clip: text;
+
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="https://scribbl.ml"><h1 style="color: #fff; font-family: 'Leckerli One', cursive;">Scribbl</h1></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="color: #fff; font-family: 'Pacifico', cursive;">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="scribbls.html" style="font-family: 'Pacifico', cursive; color: #fff;">Scribbl's</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" style="font-family: 'Pacifico', cursive; color: #fff">About</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" style="font-family: 'Pacifico', cursive; color: #fff">Contact</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+
+
+<section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" style="height:100vh; background-size: cover; background-image: url(2.png);">
+  
+   <div class="container-fluid">
+      <div class="row  justify-content-center align-items-center d-flex text-center h-100">
+        <div class="col-12 col-md-8  h-50 ">
+  <h1 class="display-2  text-light mb-2 mt-5 embossed" style="font-family: 'Leckerli One', cursive;"><strong>Scribbl</strong> </h1>
+            <h5 class="lead  text-light mb-5 embossed" style="font-family: 'Pacifico', cursive;"><strong>&ldquo; ready to pen something &rdquo; </strong></h5>
+<div class="wrapper">
+          <a href="scribbl-upload.html">
+          <button class="button btn btn-primary mdc-elevation--z1" style="font-family: 'Pacifico', cursive; box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);"><i class="fa fa-pencil-square" aria-hidden="true" style="font-size: 18px;"></i> Scribbl!</button>
+          </a>
+        </div>
+
+        
+          
+          <div class="btn-container-wrapper p-relative d-block  zindex-1">
+            <a class="btn btn-link btn-lg   mt-md-3 mb-4 scroll align-self-center text-light" href="#articles">
+                <i class="fa fa-angle-down fa-4x text-light"></i>
+                </a>   
+          </div>   
+        </div>
+     
+      </div>
+    </div>
+    </section>
+
+        
+<!-- articles - cards -->
+
+<section  class="s-services" style="background-size: cover; background-image: url(1.png);">
+  <br>
+<br>
+    <h2  style="text-align: center; font-family: 'Lora', serif; color: #fff;" id="articles">Articles!</h2>
+ <!--   <p  style="text-align: center; font-family: 'Lora', serif; color: #fff;" >ON STEM AND STATE OF THE ART TECHNOLOGIES!</p> -->
+<br>
+  <div class="container">
+  <div class="row">
+    <!-- 1 -->
+      <div class="col-sm-4" data-aos="fade-up" style="padding-bottom: 35px;">
+        <div class="card w-100">
+          <img class="card-img-top"  src="scribbls/jmart.jpg" alt="jmart">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center; font-family: 'Fira Sans', sans-serif;"><strong>Self-Taught Vs Graduate Developers</strong></h5> 
+            <h5 style="text-align: center;">Post by: Jonathan Moran </h5> 
+            <h6 style="text-align: center;">Tech recruiter @Chroma Recruitment Ltd</h6> 
+            <br>
+          <div>            
+           <div class="title"> <i class="fa fa-heart"></i> &nbsp; Likes: NA</div>
+           <div class="title">  <i class="fa fa-comment"></i> &nbsp; Comments: NA</div>
+           <div class="title">  <i class="fa fa-trophy"></i> &nbsp; Kudos: NA</div>
+          </div>
+          <br>
+          <button type="button" class="btn btn-primary btn-lg btn-block mdc-elevation--z1" onclick="window.location.href='scribbls/jmart.html'">Take a read!</button>
+            </div>
+          </div>
+        </div>
+          
+      <!-- 1 -->
+
+      <div class="col-sm-4" data-aos="fade-up" style="padding-bottom: 35px;">
+        <div class="card w-100">
+          <img class="card-img-top"  src="scribbls/jmart.jpg" alt="jmart">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center; font-family: 'Fira Sans', sans-serif;"><strong>Self-taught Vs University<br>(a recruiters view)</strong></h5> 
+            <h5 style="text-align: center;">Post by: Jonathan Moran </h5> 
+            <h6 style="text-align: center;">Tech recruiter @Chroma Recruitment Ltd</h6>
+          <br>   
+
+          <div>            
+           <div class="title"> <i class="fa fa-heart"></i> &nbsp; Likes: NA</div>
+           <div class="title">  <i class="fa fa-comment"></i> &nbsp; Comments: NA</div>
+           <div class="title">  <i class="fa fa-trophy"></i> &nbsp; Kudos: NA</div>
+          </div>
+          <br>
+          <button type="button" class="btn btn-primary btn-lg btn-block mdc-elevation--z1" onclick="window.location.href='scribbls/jmart1.html'">Take a read!</button>
+        </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="col-sm-4" data-aos="fade-up" style="padding-bottom: 35px;">
+        <div class="card w-100">
+          <img class="card-img-top"  src="scribbls/login.png" alt="login">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center; font-family: 'Fira Sans', sans-serif;"><strong>How to log-in securely</strong></h5> 
+            <h5 style="text-align: center;">Post by: Nadeem akhtar </h5> 
+        <!--    <h6 style="text-align: center;">Founder @Scribbl</h6> -->
+          <br>   
+
+          <div>            
+           <div class="title"> <i class="fa fa-heart"></i> &nbsp; Likes: NA</div>
+           <div class="title">  <i class="fa fa-comment"></i> &nbsp; Comments: NA</div>
+           <div class="title">  <i class="fa fa-trophy"></i> &nbsp; Kudos: NA</div>
+          </div>
+          <br>
+       <button type="button" class="btn btn-primary btn-lg btn-block mdc-elevation--z1" onclick="window.location.href='scribbls/howtologin.html'">Take a read!</button>
+        </div>
+            </div>
+          </div>
+            <br> 
+       
+    </div>
+  </div>
+
+</section> <!-- end cards -->
+
+<!-- blogs  -->
+
+<section  class="s-services">
+  <br>
+  <br>
+  <br>
+    <h2  style="text-align: center; font-family: 'Pacifico', cursive; color: #3832c5;" id="articles">blogs!</h2>
+    <p  style="text-align: center; font-family: 'Lora', serif; color: #3832c5;" >Take a read!</p> 
+<br>
+ <div id="fh5co-blog">
+  <div class="container">
+  <div class="row row-padded-mb">
+      
+
+<!-- login -->
+        <div class="fh5co-blog animate-box">
+        <div class="fh5co-event">
+          <a href="#">
+          <div class="date text-center" style="box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);"><span style="color: #fff">Jul<br>2019</span></div>
+          </a>
+          <h1 style="color: #3832c5; font-family: 'Pacifico', cursive; font-style: bold;"> Behavior's emerged from internet friendship.</h1>
+          <h6 style="color: #3832c5; font-family: 'Lora', serif;"> Posted by <u>Nadeem Akhtar</u></h6> 
+          <h6 style="color: #3832c5"><i class="fa fa-heart"></i> <i class="fa fa-comment"></i> <i class="fa fa-trophy"></i></h6>
+          <p><a href="scribbls/internet-friendship.html" style="color: #fff; font-family: 'Fira Sans', sans-serif;">Read More</a></p>       
+        </div>
+        </div>
+<!-- internet friendship -->
+
+<!--  --> 
+  </div> 
+  </div>
+  </div>
+
+</section>
+<!-- Course banner -->
+
+<section  class="s-services" style="background-size: cover; background-image: url(1.png);">
+<br>
+<br>
+<h2  style="text-align: center; font-family: 'Lora', serif; color: #fff;">How to! scribbls</h2>
+<br>
+  <div class="container">
+  <div class="row">
+    <!-- 1 -->
+      <div class="col-sm" data-aos="fade-up" style="padding-bottom: 35px;">
+        <div class="card w-100">
+          <img class="card-img-top"  src="scribbls/android.jpg" alt="android" >
+          <div class="card-body">
+            <h1 class="card-title" style="text-align: center; font-family: 'Sans', serif;"><strong>Android Development</strong></h1> 
+            <h5 style="text-align: center;">Series by: Nadeem Akhtar </h5> 
+          <!--  <h6 style="text-align: center;">Tech recruiter @Chroma Recruitment Ltd</h6> -->
+            <div class="table-responsive">
+            <table class="table">
+              <tr>
+                <td>
+          <div>            
+           <div class="title"> <i class="fa fa-heart"></i> &nbsp; Likes: NA</div>
+           <div class="title"><i class="fa fa-comment"></i> &nbsp; Comments: NA</div>
+           <div class="title">  <i class="fa fa-trophy"></i> &nbsp; Kudos: NA</div>
+          </div>
+                </td>
+                
+                <td>
+            
+              <div class="title" >Android Fundamentals</div>
+              <div class="title" >Material Design fundamentals</div>
+              <div class="title" >UI Design</div>
+              </td>
+              <td>             
+            
+            <div class="title" >Backend connectivity</div>
+              <div class="title" >Background task</div>
+              <div class="title" >JSON parsing</div>
+            </td>
+            <td>
+              <div class="title" >Web technologies</div>
+              <div class="title" >Web View wrapper</div>
+                </td>
+              </tr>
+          </table>
+          </div>
+            
+          <button type="button" class="btn btn-primary btn-lg btn-block mdc-elevation--z1" onclick="window.location.href='howto.html'">Go to the series!</button>
+            </div>
+          </div>
+        </div>       
+    </div>
+  </div>
+
+</section> <!-- end cards -->
+
+<!-- subscription -->
+<div style="background-color: #141c25ff;">
+      <p style="padding-top: 50px;">
+      </p>
+      <div class="container" style="border: 2px dashed #fff;" >
+    <div class="row" >
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview" style="padding-top: 35px;">
+         
+            <h1 class="post-title" style="text-align: center; font-family: 'Pacifico', cursive; color: #fff;">
+              Subscribe to our newsletter! 
+            </h1>
+          </div>
+            <div class="wrapper">
+           
+            <button type="button" class="button btn btn-primary mdc-elevation--z1" style="font-family: 'Pacifico', cursive; box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);"
+             onclick="window.location.href='subscribe.html'"><i class="fa fa-envelope" aria-hidden="true" style="color: #fff; padding-bottom: 5px;"></i> Subscribe!</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<p style="padding-bottom: 50px;"></p>   
+</div>
+
+<footer>
+<div class="overlay"></div>
+    <div class="container">
+      <div class="row copyright">
+        <div class="col-md-12 text-center">
+        <br>
+        <p class="header-nav__social">
+                    
+<a href="https://www.instagram.com/scribbl.ml/"><i class="fa fa-instagram" style="color: #000; font-size: 25px; padding-right: 25px;"></i>&nbsp;</a> 
+<a href="https://github.com/akhtarnadeem915"><i class="fa fa-github" style="color: #000; font-size: 25px;"></i></a>
+        </p>
+        
+          <br>
+           <p class="copyright text-muted" style="font-family: 'Pacifico', cursive;">Copyright &copy; scribbl.ml</p>
+           <br>
+           <small>
+          <i class="fa fa-eye" aria-hidden="true" style="font-size: 20px; padding-right: 10px;"></i><!-- Start of CuterCounter Code -->
+<a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=guqdfaq&nd=4&style=9" border="0" alt="visitor counter"></a><!-- End of CuterCounter Code -->
+        </small> 
+        <br>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </footer>
+  <br>
+</body>
+</html>
