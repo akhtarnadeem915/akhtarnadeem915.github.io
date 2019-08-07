@@ -23,6 +23,9 @@ $email = mysqli_real_escape_string($link,$_POST['email']);
 }
 // inserting data into mysql database
 $sql="INSERT INTO newsletter (name, email) VALUES ('$name', '$email')";
+if (mysqli_query($link,$sql)) {
+echo "thank you $name for subscribing!";
+}
 
 //closing the connection
 mysqli_close($link);
