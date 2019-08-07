@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Scribbl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="blogging website" />
+  <meta name="keywords" content="" />
+  <meta name="Scribble" content="free" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="scribbls/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="scribbls/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="scribbls/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="scribbls/favicon_io/site.webmanifest">
+
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="blog.css">
+
+<style type="text/css">
+   @keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+span:hover {
+    animation: bounce 1s;
+}
+
+
+.card {
+    
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  max-width: 100%;
+  border: none;
+
+}
+
+
+.card:hover {
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);
+  animation: bounce 1s;
+}
+
+
+.wrapper{
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 45px;
+}
+
+</style>
+<link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
+</head>
+  <body style="background-color: #141c25ff;" >
+
+<p style="padding-bottom: 20px;">
+</p>
+ <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          
+          <h1 class="post-title" style="text-align: center; font-family: 'Pacifico', cursive; color: #fff; padding-top: 20px;" >
+              Scribbl!
+            </h1>
+            <p style="font-family: 'Scope One', serif; font-size: 20px; color: #fff;">Fill up the template to add your article/blog on the Scribbl!</p>
+        <p style="font-size: 15px; color: #fff;">Note:- your email address is not displayed on the post, it is used for further communication and also you become our newsletter subscriber too! <br> Fields * marked are mandatory.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  	<!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">       
+       
+        <form action="https://formspree.io/scribbl.ml@gmail.com" method="POST"  id="submit_form" /> 
+              <br>         
+              <label style="color: #fff; font-family: 'Pacifico', cursive;">Name :- *</label> <br>
+              <input type="text"  placeholder="Post by" style="font-family: 'Scope One', serif; font-size: 20px;" name="name" class="form-control" required>              
+            
+              <br>
+              <label style="color: #fff; font-family: 'Pacifico', cursive;">Email :- *</label>  
+              <input style="font-family: 'Scope One', serif; font-size: 20px;" type="email"  placeholder="Email Address" name="email" class="form-control" required>
+           
+              <br>
+              <label style="color: #fff; font-family: 'Pacifico', cursive;">Heading :- *</label> 
+              <textarea style="font-family: 'Scope One', serif; font-size: 20px;" rows="3" cols="100%"  placeholder="Post title" name="heading" class="form-control" required></textarea>
+              
+              <br>
+              <label style="color: #fff; font-family: 'Pacifico', cursive;">Sub Heading :- </label> 
+              <textarea style="font-family: 'Scope One', serif; font-size: 20px;" rows="2" cols="100%" placeholder="Post sub-title" class="form-control" name="sub_heading"></textarea>
+              
+              <br>
+              <label style="color: #fff; font-family: 'Pacifico', cursive;">Content :- *</label> 
+              <textarea rows="70" cols="100%" style="font-family: 'Scope One', serif; font-size: 20px;" class="form-control" placeholder="                 Write the content here in multiple paragraphs, add <img> element for adding images, upload the image in the drive in proper sequence and add the link under the Add image section of template, for adding blockquotes just add <blockquote> element, and write the blockquotes under blockquotes section provided in template. 
+                
+                example:- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+
+                <img>1</img> 
+
+
+                urna porttitor rhoncus dolor purus non enim praesent elementum. Nullam vehicula ipsum a arcu cursus vitae congue mauris. In ornare quam viverra orci sagittis. 
+
+
+                <img>2</img> 
+
+
+                purus gravida quis blandit turpis cursus in hac habitasse. Enim facilisis gravida neque convallis a cras semper auctor. Nulla facilisi cras fermentum odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Habitant morbi tristique senectus et netus et malesuada fames. Gravida in fermentum et sollicitudin ac. Nec tincidunt praesent semper feugiat. Tellus integer feugiat scelerisque varius morbi.
+                Urna nec tincidunt praesent semper feugiat. Lorem sed risus ultricies tristique nulla. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Molestie at elementum eu facilisis sed odio morbi. Suspendisse sed nisi lacus sed viverra. Ac turpis egestas integer eget aliquet nibh praesent tristique. 
+
+
+                <blockquote>1</blockquote>
+
+
+                   Aliquam ut porttitor leo a diam. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. At lectus urna duis convallis convallis tellus id interdum velit. Massa sapien faucibus et molestie ac feugiatsed lectus. Eleifend donec pretium vulputate sapien nec sagittis aliquam." name="content" required></textarea>
+              
+          
+              <br>
+              <label style="color: #fff; font-family: 'Pacifico', cursive;">Blockquotes :- </label> 
+              <textarea style="font-family: 'Scope One', serif; font-size: 20px;" rows="10" cols="100%" class="form-control" placeholder="1. &ldquo; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. &rdquo;" name="blockquotes"></textarea>
+              
+              <br>
+              <label style="color: #fff; font-family: 'Pacifico', cursive;">Links :- </label> 
+              <textarea style="font-family: 'Scope One', serif; font-size: 20px;" rows="5" cols="100%" class="form-control" placeholder="hyperlinks" name="links"></textarea>
+              
+              <br>
+              <label style="color: #fff; font-family: 'Pacifico', cursive;">Add Images :- </label> 
+              <textarea style="font-family: 'Scope One', serif; font-size: 20px;" rows="3" cols="100%" class="form-control" placeholder="Upload images to drive and add the shareable link here                                                                                                       1. https://drive.google.com/sopen?id=................" name="images"></textarea>
+              
+              <br>
+              <label style="color: #fff; font-family: 'Pacifico', cursive;">Figcaption :- </label> 
+              <textarea style="font-family: 'Scope One', serif; font-size: 20px;" rows="3" cols="100%" class="form-control" placeholder="Caption for images" name="caption"></textarea> 
+              <br>
+              <button class="button btn btn-primary" name="submit" id="submit" value="Submit" style="font-family: 'Pacifico', cursive;"><i class="fa fa-send" aria-hidden="true" style="color: #fff;"></i> Submit!</button>
+            </form>
+
+      </div>
+    </div>
+ 
+</div>
+  <footer>
+<div class="overlay"></div>
+    <div class="container">
+      <div class="row copyright">
+        <div class="col-md-12 text-center">
+        <br>
+        <p class="header-nav__social">
+                    
+<a href="https://www.instagram.com/scribbl.ml/"><i class="fa fa-instagram" style="color: #fff; font-size: 25px; padding-right: 25px;"></i>&nbsp;</a> 
+<a href="https://github.com/akhtarnadeem915"><i class="fa fa-github" style="color: #fff; font-size: 25px;"></i></a>
+        </p>
+        
+          <br>
+           <p class="copyright text-muted" style="font-family: 'Pacifico', cursive;">Copyright &copy; scribbl.ml</p>
+           <br>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </footer>
+  <br>
+</body>
+</html> 
+</body>
+
+</html>
+
+
+ 
+ 	
