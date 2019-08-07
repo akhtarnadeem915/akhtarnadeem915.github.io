@@ -1,0 +1,20 @@
+<?php
+//for header errors
+header('Access-Control-Allow-Origin: *');
+
+//connection code here
+
+// fetching  data from  mysql database
+$sql = "Select * from <table_name>";
+$result = mysqli_query($link,$sql);
+$json_array=array();
+while($row = mysqli_fetch_assoc($result))
+{
+	$json_array[]=$row;	
+}
+echo $var= json_encode($json_array); 
+
+// closing connection
+mysqli_close($link);
+?>
+
