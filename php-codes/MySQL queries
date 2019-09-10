@@ -10,4 +10,10 @@ eg - $sql = "UPDATE books SET title='$book_name' WHERE id='$id' " ;
 
 //update query for updating whole column
 $sql = "UPDATE <table_name> SET <column_name> = '$var'";
-eg - $sql = "UPDATE books SET book_name = 'php'";
+eg - $sql = "UPDATE books SET book_name = 'php'";   
+
+//fetching  data from  mysql database
+$sql="Select * from <table_name>";   
+
+//fetching total number of rows from  mysql database
+$sql="Select count(*) from <table_name>";
