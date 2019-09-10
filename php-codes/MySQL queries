@@ -4,5 +4,10 @@ $sql="INSERT INTO <table_name> (column_name_1, column_name_2) VALUES ('$var1', '
 //delete query
 $sql="DELETE FROM <table_name> WHERE id = '$id'";
 
-//update query
-$sql = "UPDATE <table_name> SET <column_name_1> = '$var1', <column_name_2> = '$var2', WHERE <column_name> = '$var'";
+//update query for updating column value at specific row
+$sql = "UPDATE <table_name> SET <column_name_1> = '$var1', <column_name_2> = '$var2', WHERE <column_name> = '$var'";   
+eg - $sql = "UPDATE books SET title='$book_name' WHERE id='$id' " ;   
+
+//update query for updating whole column
+$sql = "UPDATE <table_name> SET <column_name> = '$var'";
+eg - $sql = "UPDATE books SET book_name = 'php'";
