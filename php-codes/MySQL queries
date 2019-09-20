@@ -17,3 +17,7 @@ $sql="Select * from <table_name>";
 
 //fetching total number of rows from  mysql database
 $sql="Select count(*) from <table_name>";
+
+//rename table name
+$sql = "RENAME TABLE table_old TO table_new";
+//RENAME TABLE `TABLE 1` TO `TABLE 1`;
