@@ -36,40 +36,12 @@ body{
     <input class="mdc-text-field__input" id="book_name" name="book_name" placeholder="Book Name">
     
   </div>
-  <div style="color: #000;" id="countryList"></div>
     <button class="mdc-button mdc-button--raised" type="submit" value="search" formtarget="_blank">Search</button>  
 </div>
 
 
 <input type="hidden" name="data_fetch" value="1" />
 </form>
-
-<!-- Main JS-->
-<script src="book-regis/js/global.js"></script>
-<script>  
- $(document).ready(function(){  
-      $('#book_name').keyup(function(){  
-           var query = $(this).val();  
-           if(query != '')  
-           {  
-                $.ajax({  
-                     url:"cs-ac.php",  
-                     method:"POST",  
-                     data:{query:query},  
-                     success:function(data)  
-                     {  
-                          $('#countryList').fadeIn();  
-                          $('#countryList').html(data);  
-                     }  
-                });  
-           }  
-      });  
-      $(document).on('click', 'li', function(){  
-           $('#book_name').val($(this).text());  
-           $('#countryList').fadeOut();  
-      });  
- });  
- </script> 
 
 </body>
 </html>
